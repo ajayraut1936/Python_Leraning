@@ -38,3 +38,68 @@ print(thisDic.values())
 thisDic['Name']='Mahesh'
 print(thisDic)
 
+
+
+
+print("\n\n\n")
+Dic={'Name':'Ajay','GF_Name':'Chaitrali P','Age':25}
+
+print(Dic)
+# Print the lenght of the dic 
+print(len(Dic))
+
+# to check the type of dic 
+print(type(Dic))
+
+#to get something from dic by keys 
+print(Dic.get("Name"))
+print(Dic["Name"])
+
+# to get all keys of the doc 
+print(Dic.keys())
+
+#to get all values of dic 
+print(Dic.values())
+
+# to get all items of dic 
+print(Dic.items())
+
+# Chnage item
+Dic['Name']= "Chaitu"
+print(Dic)
+
+Dic.update({'Name':'Ajay'})
+print(Dic)
+
+Dic.update({'addr':'katraj'})
+print(Dic)
+
+Dic.pop("addr")
+print(Dic)
+
+del Dic["Name"]
+print(Dic)
+
+Dic.clear()
+print(Dic)
+
+# del Dic
+
+
+Dic={'Name':'Ajay','GF_Name':'Chaitrali P','Age1':25,'Age2':24,'Age3':100}
+
+for i in Dic:
+    print(i)
+
+def return_values(str):
+    print(str)
+    value=str.values()
+    return value
+
+# sorted_vales = sorted(Dic, key=lambda x:return_values(x))
+my_dict = {'apple': 5, 'banana': 2, 'orange': 8, 'grape': 3}
+
+# Sorting the dictionary based on values in ascending order
+sorted_dict = sorted(my_dict.items(), key=lambda item: item[1])
+
+print(sorted_dict)
